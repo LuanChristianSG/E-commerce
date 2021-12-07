@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR STARTS */
+.navbar {
+    background-color: #24262b;
+}
+.navbar-nav {
+    margin: auto;
+}
+.nav-link {
+    margin: 5px 30px;
+}
+
+#nav-bar-c {
+    text-decoration: none;
+    color: #eeebdd;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+.dropdown-item {
+	color: #24262b;
+	background-color: #810000;
+}
+
+ /* NAVBAR ENDS */
+
+ 
+
+/* FOOTER STARTS */
+.my-container{
+	flex-shrink: 0;
+	bottom: 0;
+	max-width: 900px;
+	margin:auto;
+}
+.my-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.my-footer{
+	margin-top: 20vh;
+	background-color: #24262b;
+    padding: 10px 0;
+    width:100%;
+}
+.my-footer-col{
+   width: 25%;
+}
+.my-footer-col h4{
+    padding: 10px 0;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+	font-weight: 500;
+	position: relative;
+}
+.my-footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.my-footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.my-footer-col p{
+	color: #bbbbbb;
+	transition: all 0.3s ease;
+	margin-left: 20px
+}
+.my-footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.my-footer-col ul li a:hover{
+	padding-left: 8px;
+}
+.my-footer-col #map {
+    height: 200px;
+    width: 400px;
+	margin-left: 50px;
+}
+/* FOOTER ENDS */
+
+/* HOME STARTS */
+
+
+ 																/* Carrousel STARTS */
+.carousel-item {
+	background-color: #24262b;
+}
+																/* Carrousel ENDS */
+
+
+																/* MAIS VENDIDOS */
+.d-flex {
+	margin: 0 20px;
+	gap: 6vw;
+	width: 95%;
+
+}
+.d-flex justify-content-center{
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.p-2 {
+	border: 1px solid pink;
+	object-fit: cover;
+}
+h2 {
+	text-align: center;
+	padding: 7px 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.navbar-brand img{
+	height: 100px;
+	padding-left: 50px;
+}
+																/* MAIS VENDIDOS */
+
+
+
+
+
+												
+.card {
+	width: 300px;
+	margin: 0 10px;
+}
+.card-deck{
+	display: flex;
+}
+.card-body a{
+	margin: 0 0;
+}
+#prod-desc {
+	text-align: center;
+}
+

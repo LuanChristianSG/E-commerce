@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Static imports -->
+
+
+<body>
+    <!-- Carrousel STARTS -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{{ product.get_absolute_url }}">
+                    <img class="d-block w-100" src="static/images/HomeBanner1.png" alt="First slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{{ product.get_absolute_url }}">
+                    <img class="d-block w-100" src="static/images/HomeBanner2.png" alt="Second slide">
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="{{ product.get_absolute_url }}">
+                    <img class="d-block w-100" src="static/images/HomeBanner3.png" alt="Third slide">
+                </a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Carrousel ENDS -->
+
+    <h2>Coleções</h2>
+    <div class="d-flex justify-content-center">
+        <div class="p-2">
+           <a
+                   href="http://127.0.0.1:8000/products/category/discos/"> <img class="d-block w-100" src="static/images/Discos.png" alt="Card1">
+           </a>
+        </div>
+        <div class="p-2">
+            <a
+                    href="http://127.0.0.1:8000/products/category/vitrolas/"> <img class="d-block w-100" src="static/images/Vitrolas.png" alt="Card2">
+            </a>
+        </div>
+        <div class="p-2">
+            <a
+                    href="http://127.0.0.1:8000/products/category/discos-premium/"> <img class="d-block w-100" src="static/images/Discos Premium.png" alt="Card3">
+            </a>
+        </div>
+
+    </div>
+    <br>
+
+
+    <div class="destaque">
+    <img class="center" src="static/images/Banner.png" alt="Banner">
+    </div>
+
+
+
+    <ul>
+        {% for product in product_list %}
+        <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+{% endblock content %}

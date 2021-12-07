@@ -1,0 +1,29 @@
+/* PRODUCT CARD STARTS */
+.product-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    margin: 16px;
+}
+img{
+    height: 400px;
+}
+
+.product-in-card{
+    background-color: grey;
+}
+/* PRODUCT CARD ENDS */
+
+/* AD SALE CARD STARTS */
+
+.ad-sale-card{
+    background-color: grey;
+    padding: 150px;
+    margin: 16px;
+}
+
+/* AD SALE CARD ENDS */
+
+.homepage-category-title{
+    text-align: center;
+}
